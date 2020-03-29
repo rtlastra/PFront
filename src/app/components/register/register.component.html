@@ -1,0 +1,33 @@
+<form>
+<div class="wrap-input100">
+    <input class="input100" type="text" name="name" placeholder="Nombre">
+</div>
+<div class="wrap-input100">
+    <input class="input100" type="text" name="lastname" placeholder="Apellido">
+</div>
+<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+    <input class="input100" type="text"[(ngModel)]="user.email" name="email" placeholder="Correo">
+    <span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate = "Password is required">
+    <input class="input100" type="password"[(ngModel)]="user.password" name="pass" placeholder="Contraseña">
+    <span class="focus-input100"></span>
+</div>
+<div class="wrap-input100">
+    <input class="input100" type="text" name="grado" placeholder="Grado Actual">
+</div>
+<div class="wrap-input100">
+    <input class="input100" type="text" name="cedula" placeholder="Cedula acudiente">
+</div>
+<div class="wrap-input100">
+    <input class="input100" type="text" name="padre" placeholder="Nombre acudiente">
+</div>
+<div class="wrap-input100">
+    <input class="input100" type="text" name="userac" placeholder="Correo acudiente">
+</div>
+<div class="container-login100-form-btn">
+    <button class="login100-form-btn" (click)="onRegister()" >
+        Registrarse
+    </button>
+</div>
+</form>
